@@ -1,3 +1,16 @@
+.logo {
+    width: 150px;             /* Adjust the width */
+    height: 150px;            /* Adjust the height */
+    margin: 10px;
+    background-image: url('./img/logo.png');
+    background-size: contain; /* Ensures the entire image fits */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-position: center; /* Centers the image */
+}
+
+
+
+
 h1 {
     color:whitesmoke;
     font-size: 36px;
