@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'openSans';
+    src: url('./assets/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'fontHeading';
+    src: url('./assets/fonts/Merriweather-Bold.ttf');
+}
+
+
 .logo {
     width: 150px;             /* Adjust the width */
     height: 150px;            /* Adjust the height */
@@ -9,22 +19,19 @@
 }
 
 
-
-
-h1 {
-    color:whitesmoke;
-    font-size: 36px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    text-align: center;
+.custom-navbar {
+    background-color: #191970;
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #FFFFFF; /* Font color */
+    font-family: 'openSans', sans-serif; /* Font family */
+    font-size: 18px; /* Font size */
 }
 
-p{
-    color:beige;
-    font-size: 20px;
-    font-weight: lighter;
-    font-family: Arial, sans-serif;
-    text-align: center;
+.custom-navbar .navbar-brand:hover,
+.custom-navbar .nav-link:hover {
+    color: #FFD700; /* Font color on hover */
 }
 
 
@@ -37,4 +44,84 @@ p{
     color: green;
     background-color: white; 
     border-color: white; 
+}
+
+
+
+
+/* Style for the container with the background image */
+.background-container {
+    background-image: url('./img/bg\ 1\ cool.png');
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use Flexbox to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    position: relative;
+}
+
+/* Style for the text overlay */
+.text-overlay {
+    color: hsl(0, 0%, 100%); /* Text color */
+    padding: 20px; /* Space around the text */
+    /*background: rgba(185, 175, 23, 0.5); /* Optional: semi-transparent background for better readability */
+    border-radius: 2px; /* Optional: rounded corners for the background */
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: -400px;
+    font-family: fontHeading;
+}
+
+
+
+
+/* styles.css */
+
+/* Custom Color Palette */
+:root {
+    --mblue-darker-shade: #0F0F50; 
+    --mblue-lighter-shade: #2F2FA2; 
+    --gold: #FFD700;
+    --gold-shade-light: #f0e68c; 
+}
+
+/* Card Customization */
+.card {
+    background-color: var( --mblue-lighter-shade); /* Gold Background */
+    color: white; /* Text color */
+}
+
+.card-header, .card-footer {
+    background-color: var(--mblue-darker-shade); /* Dark Red Header and Footer */
+    color: white;
+}
+
+/* Button Customization */
+.btn-primary {
+    background-color: var(--dark-red-shade); /* Dark Red Button */
+    border-color: var(--dark-red-shade);
+}
+
+.btn-primary:hover {
+    background-color: var(--gold-shade-light); /* Lighter Gold on Hover */
+    border-color: var(--gold-shade-light);
+}
+
+/* Link Customization */
+.link-primary {
+    color: rgb(167, 135, 135);
+}
+
+.link-primary:hover {
+    color: var(--gold-shade-light); /* Lighter Gold on Hover */
+}
+
+.semi-heading {
+    font-family: fontHeading;
+    font-size:larger;
+    color: white;
+    background-color: #191970; /* Midnight Blue */
+    padding: 10px;
 }
