@@ -49,13 +49,43 @@
   </nav>  
 
 
-    <img src="./img/bg 1 cool.png" alt="" srcset="" class="img-fluid">
-      <div class="position-absolute top-1 start-50 translate-middle text-center p-3 text-overlay" style="background-color: rgba(0, 0, 0, 0.5);">
-        <h1 class="fs-1 fw-bold">SHAKYA Real Estate</h1>
-        <p class="fs-4">Take Your Real Value</p>
-        <a href="login.html" class="btn btn-outline-success custom-btn">Log In</a>
-        <a href="signup.html" class="btn btn-outline-success custom-btn">Sign Up</a>
-      </div>
+<!-- Background Image -->
+<img src="./img/bg 1 cool.png" alt="" class="img-fluid bg-img">
+
+<!-- Form Container -->
+<div class="form-container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="position-relative text-overlay p-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h5 class="card-title mb-0">Login</h5>
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="loginEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </form>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="#" class="link-primary">Forgot password?</a>
+                            <br>
+                            <a href="signup.html" class="link-primary">Don't have an account? Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
   <div class="container-fluid" style="background-color: midnightblue;">
     <div class="row text-center">
@@ -80,7 +110,6 @@
     
     <!-- House Category -->
     <h3 class="mb-3">Houses</h3>
-    <a href="">see more</a>
     <div class="row" id="house">
         <div class="col-md-4 mb-4">
             <div class="card">
@@ -116,7 +145,6 @@
 
     <!-- Apartment Category -->
     <h3 class="mb-3">Apartments</h3>
-    <a href="">see more</a>
     <div class="row" id="apartment">
         <div class="col-md-4 mb-4">
             <div class="card">
@@ -152,7 +180,6 @@
 
     <!-- Commercial Building Category -->
     <h3 class="mb-3">Commercial Buildings</h3>
-    <a href="">see more</a>
     <div class="row" id="commercial">
         <div class="col-md-4 mb-4">
             <div class="card">
@@ -188,7 +215,6 @@
 
     <!-- Land Category -->
     <h3 class="mb-3">Lands</h3>
-    <a href="">see more</a>
     <div class="row" id="land">
         <div class="col-md-4 mb-4">
             <div class="card">

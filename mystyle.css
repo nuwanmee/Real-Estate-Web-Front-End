@@ -46,12 +46,18 @@
     border-color: white; 
 }
 
+.custom-btn:hover {
+    background-color: gold; /* Changes background on hover */
+    color: darkred;              /* Changes text color on hover */
+    border-color: #218838;     /* Optional: Change border color on hover */
+}
+
 
 
 
 /* Style for the container with the background image */
 .background-container {
-    background-image: url('./img/bg\ 1\ cool.png');
+    /* background-image: url('./img/bg\ 1\ cool.png'); */
     background-size: cover; /* Ensures the image covers the entire container */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -124,4 +130,6 @@
     color: white;
     background-color: #191970; /* Midnight Blue */
     padding: 10px;
+    
+
 }
